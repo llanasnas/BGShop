@@ -8,12 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		EF39E927204847C4004AB332 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF39E926204847C4004AB332 /* AppDelegate.swift */; };
-		EF39E929204847C4004AB332 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF39E928204847C4004AB332 /* ViewController.swift */; };
+		EF39E929204847C4004AB332 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF39E928204847C4004AB332 /* MainController.swift */; };
 		EF39E92C204847C4004AB332 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF39E92A204847C4004AB332 /* Main.storyboard */; };
 		EF39E92E204847C4004AB332 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF39E92D204847C4004AB332 /* Assets.xcassets */; };
 		EF39E931204847C4004AB332 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF39E92F204847C4004AB332 /* LaunchScreen.storyboard */; };
 		EF39E93C204847C5004AB332 /* BGShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF39E93B204847C5004AB332 /* BGShopTests.swift */; };
 		EF39E947204847C5004AB332 /* BGShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF39E946204847C5004AB332 /* BGShopUITests.swift */; };
+		EF7296B0205817B90011D906 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EF7296AF205817B90011D906 /* libsqlite3.tbd */; };
+		EF7296BE205818D20011D906 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7296B4205818D10011D906 /* FMDatabasePool.m */; };
+		EF7296BF205818D20011D906 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7296B6205818D10011D906 /* FMDatabaseQueue.m */; };
+		EF7296C0205818D20011D906 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7296B7205818D10011D906 /* FMResultSet.m */; };
+		EF7296C1205818D20011D906 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7296B8205818D10011D906 /* FMDatabase.m */; };
+		EF7296C2205818D20011D906 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF7296BB205818D10011D906 /* Info.plist */; };
+		EF7296C3205818D20011D906 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7296BC205818D10011D906 /* FMDatabaseAdditions.m */; };
+		EF7296C620582A980011D906 /* task.bd in Resources */ = {isa = PBXBuildFile; fileRef = EF7296C520582A980011D906 /* task.bd */; };
+		EF7296C8205834310011D906 /* SecondController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7296C7205834310011D906 /* SecondController.swift */; };
+		EFADD161205AC13E001A004B /* ProductItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFADD160205AC13E001A004B /* ProductItem.swift */; };
+		EFADD163205AC2CF001A004B /* ProductItemsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFADD162205AC2CF001A004B /* ProductItemsManager.swift */; };
+		EFADD167205ACE07001A004B /* ProductTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFADD166205ACE07001A004B /* ProductTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +48,7 @@
 /* Begin PBXFileReference section */
 		EF39E923204847C4004AB332 /* BGShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BGShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF39E926204847C4004AB332 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EF39E928204847C4004AB332 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF39E928204847C4004AB332 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		EF39E92B204847C4004AB332 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF39E92D204847C4004AB332 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF39E930204847C4004AB332 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +59,25 @@
 		EF39E942204847C5004AB332 /* BGShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BGShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF39E946204847C5004AB332 /* BGShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGShopUITests.swift; sourceTree = "<group>"; };
 		EF39E948204847C5004AB332 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF7296AF205817B90011D906 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		EF7296B1205818D00011D906 /* BGShop-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BGShop-Bridging-Header.h"; sourceTree = "<group>"; };
+		EF7296B2205818D00011D906 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		EF7296B3205818D10011D906 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		EF7296B4205818D10011D906 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		EF7296B5205818D10011D906 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		EF7296B6205818D10011D906 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		EF7296B7205818D10011D906 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		EF7296B8205818D10011D906 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		EF7296B9205818D10011D906 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		EF7296BA205818D10011D906 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		EF7296BB205818D10011D906 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF7296BC205818D10011D906 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		EF7296BD205818D20011D906 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		EF7296C520582A980011D906 /* task.bd */ = {isa = PBXFileReference; lastKnownFileType = file; path = task.bd; sourceTree = "<group>"; };
+		EF7296C7205834310011D906 /* SecondController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondController.swift; sourceTree = "<group>"; };
+		EFADD160205AC13E001A004B /* ProductItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItem.swift; sourceTree = "<group>"; };
+		EFADD162205AC2CF001A004B /* ProductItemsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemsManager.swift; sourceTree = "<group>"; };
+		EFADD166205ACE07001A004B /* ProductTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF7296B0205817B90011D906 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +109,17 @@
 		EF39E91A204847C4004AB332 = {
 			isa = PBXGroup;
 			children = (
+				EFADD166205ACE07001A004B /* ProductTableViewController.swift */,
+				EFADD162205AC2CF001A004B /* ProductItemsManager.swift */,
+				EFADD160205AC13E001A004B /* ProductItem.swift */,
+				EF7296C520582A980011D906 /* task.bd */,
+				EF7296C4205819070011D906 /* fmdb */,
 				EF39E925204847C4004AB332 /* BGShop */,
 				EF39E93A204847C5004AB332 /* BGShopTests */,
 				EF39E945204847C5004AB332 /* BGShopUITests */,
 				EF39E924204847C4004AB332 /* Products */,
+				EF7296AE205817B90011D906 /* Frameworks */,
+				EF7296B1205818D00011D906 /* BGShop-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +137,12 @@
 			isa = PBXGroup;
 			children = (
 				EF39E926204847C4004AB332 /* AppDelegate.swift */,
-				EF39E928204847C4004AB332 /* ViewController.swift */,
+				EF39E928204847C4004AB332 /* MainController.swift */,
 				EF39E92A204847C4004AB332 /* Main.storyboard */,
 				EF39E92D204847C4004AB332 /* Assets.xcassets */,
 				EF39E92F204847C4004AB332 /* LaunchScreen.storyboard */,
 				EF39E932204847C4004AB332 /* Info.plist */,
+				EF7296C7205834310011D906 /* SecondController.swift */,
 			);
 			path = BGShop;
 			sourceTree = "<group>";
@@ -123,6 +163,33 @@
 				EF39E948204847C5004AB332 /* Info.plist */,
 			);
 			path = BGShopUITests;
+			sourceTree = "<group>";
+		};
+		EF7296AE205817B90011D906 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF7296AF205817B90011D906 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF7296C4205819070011D906 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				EF7296B2205818D00011D906 /* FMDatabase.h */,
+				EF7296B8205818D10011D906 /* FMDatabase.m */,
+				EF7296B3205818D10011D906 /* FMDatabaseAdditions.h */,
+				EF7296BC205818D10011D906 /* FMDatabaseAdditions.m */,
+				EF7296BD205818D20011D906 /* FMDatabasePool.h */,
+				EF7296B4205818D10011D906 /* FMDatabasePool.m */,
+				EF7296B5205818D10011D906 /* FMDatabaseQueue.h */,
+				EF7296B6205818D10011D906 /* FMDatabaseQueue.m */,
+				EF7296BA205818D10011D906 /* FMDB.h */,
+				EF7296B9205818D10011D906 /* FMResultSet.h */,
+				EF7296B7205818D10011D906 /* FMResultSet.m */,
+				EF7296BB205818D10011D906 /* Info.plist */,
+			);
+			path = fmdb;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +260,7 @@
 				TargetAttributes = {
 					EF39E922204847C4004AB332 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					EF39E936204847C5004AB332 = {
@@ -232,6 +300,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF7296C2205818D20011D906 /* Info.plist in Resources */,
+				EF7296C620582A980011D906 /* task.bd in Resources */,
 				EF39E931204847C4004AB332 /* LaunchScreen.storyboard in Resources */,
 				EF39E92E204847C4004AB332 /* Assets.xcassets in Resources */,
 				EF39E92C204847C4004AB332 /* Main.storyboard in Resources */,
@@ -259,8 +329,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF39E929204847C4004AB332 /* ViewController.swift in Sources */,
+				EF39E929204847C4004AB332 /* MainController.swift in Sources */,
+				EF7296C8205834310011D906 /* SecondController.swift in Sources */,
+				EFADD161205AC13E001A004B /* ProductItem.swift in Sources */,
+				EF7296BF205818D20011D906 /* FMDatabaseQueue.m in Sources */,
+				EF7296BE205818D20011D906 /* FMDatabasePool.m in Sources */,
+				EFADD167205ACE07001A004B /* ProductTableViewController.swift in Sources */,
+				EF7296C1205818D20011D906 /* FMDatabase.m in Sources */,
 				EF39E927204847C4004AB332 /* AppDelegate.swift in Sources */,
+				EF7296C3205818D20011D906 /* FMDatabaseAdditions.m in Sources */,
+				EFADD163205AC2CF001A004B /* ProductItemsManager.swift in Sources */,
+				EF7296C0205818D20011D906 /* FMResultSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,11 +505,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BGShop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = werwre.BGShop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BGShop-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -440,11 +522,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BGShop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = werwre.BGShop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BGShop-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
